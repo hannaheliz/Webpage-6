@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  justify-content: center;
+  background:#e1d8c1;
+  background-color: #e1d8c1;
+  background-image:  radial-gradient(#444cf7 1px, transparent 1px), radial-gradient(#444cf7 1px, #e5e5f7 1px);
+  background-size: 40px 40px;
+  background-position: 0 0,20px 20px;
+}
+
+#content-box {
+  position: absolute;
+  top: 50px;
+}
+.circle {
+  background-color: #555;
+  border-radius: 60%;
+  animation-name: example;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  position: relative;
+  margin: 0 auto;
+  top: 100px;
+  height: 450px;
+  width: 450px;
+}
+
+@keyframes example {
+  0%   {background-color: #ffcccc;}
+ 25%  {background-color: #e97149;}
+ 50%  {background-color: #ffccb3;}
+ 100% {background-color: #ffb3b3;}
+}
+
+.image {
+  animation: rotation 15s infinite linear;
+  position: absolute;
+  top: 20%;
+  left: 22%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
