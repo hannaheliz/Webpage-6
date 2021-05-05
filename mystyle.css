@@ -25,6 +25,29 @@ body {
   width: 450px;
 }
 
+.leaf {
+  position: absolute;
+  left: 55%;
+  top: 95%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: lightgreen;
+  border-radius: 250px 0;
+}
+
+.leaf2 {
+  position: absolute;
+  left: 37%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  rotate: 270deg;
+  width: 100px;
+  height: 100px;
+  background: lightgreen;
+  border-radius: 250px 0;
+}
+
 @keyframes example {
   0%   {background-color: #ffcccc;}
  25%  {background-color: #e97149;}
